@@ -1,0 +1,326 @@
+body {
+  margin: auto;
+  padding: 0%;
+}
+
+nav {
+  height: 15vh;
+  width: 98%;
+  margin: -10;
+  margin-inline: 15px;
+  /* border: 2px solid red; */
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 10;
+}
+
+.nav-button {
+  margin-left: 40px;
+  z-index: 30;
+}
+
+.reserve {
+  color: blue;
+  font-size: 20px;
+}
+.reservation-display {
+  height: 55vh;
+  width: 95%;
+  margin: 120px -1800px;
+  border-radius: 10px;
+  background-color: white;
+  /* border: 2px solid red; */
+  position: absolute;
+
+  /* display: none; */
+  z-index: 100;
+}
+.reservation-one {
+  height: 46vh;
+  width: 36%;
+  margin: 33px 47px;
+  border-radius: 10px;
+  /* background-color: red; */
+  /* border: 2px solid red; */
+  box-shadow: 0px 0px 5px 5px rgb(0, 0, 0, 0.2);
+  z-index: 500;
+  position: absolute;
+}
+.reservation-two {
+  height: 46vh;
+  width: 36%;
+  margin: 33px 980px;
+  border-radius: 10px;
+  /* background-color: red; */
+  /* border: 2px solid red; */
+  box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.2);
+  z-index: 500;
+  /* position: absolute; */
+}
+
+.reservation-comment {
+  height: 20vh;
+  width: 17%;
+  color: white;
+  font-size: 20px;
+  /* line-height: 20px; */
+  margin: 200px 663px;
+  background-color: blue;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0px 0px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.reservation-comment :is(p) {
+  margin: 20px 8px;
+}
+
+nav :is(button) {
+  margin: 40px 20px;
+  font-size: 16px;
+  font-family: cursive;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.nav-contact {
+  margin-left: 900px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  z-index: 25;
+}
+main {
+  height: 98vh;
+  width: 98%;
+  margin-top: 20px;
+  margin-inline: 15px;
+  border: 2px solid black;
+  /* z-index: 200; */
+  /* display: flex; */
+  /* position: absolute; */
+}
+.a-story {
+  font-size: 18px;
+  font-family: cursive;
+  margin: 120px 345px;
+  color: white;
+  background-color: red;
+  position: absolute;
+  /* z-index: 20; */
+}
+.pix-container {
+  height: 98vh;
+  width: 100%;
+  background-color: black;
+  /* background-image: url("Papa2.png"); */
+  /* margin-top: 37px; */
+  /* margin-inline: 15px; */
+  z-index: 9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: inherit;
+}
+
+.background-images {
+  height: 98vh;
+  /* width: 100%; */
+  opacity: 0.8;
+}
+.background-images :is(img) {
+  height: 98vh;
+  width: 100%;
+}
+
+.caption-container {
+  height: 30vh;
+  width: 80%;
+  margin: -680px 400px;
+  position: absolute;
+  /* z-index: 10; */
+}
+
+.pix {
+  height: 98vh;
+  /* border: 2px solid red; */
+  flex: 1;
+  /* z-index: 100; */
+}
+
+.pics-img {
+  height: 98vh;
+  width: 100%;
+}
+
+.caption-container :is(img) {
+  width: 10%;
+  margin: -245px 355px;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.caption {
+  font-size: 80px;
+  font-family: cursive;
+  color: rgb(240, 209, 153);
+  letter-spacing: 15px;
+}
+
+.at {
+  font-size: 70px;
+  color: wheat;
+  margin: -90px 390px;
+  display: none;
+}
+
+.age-container {
+  display: none;
+}
+
+.age {
+  font-size: 100px;
+  margin: 120px 370px;
+  color: rgb(240, 209, 153);
+  /* display: none; */
+}
+
+.timer-container {
+  height: 10vh;
+  width: 70%;
+  font-size: 35px;
+  margin: -200px 425px;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  /* border: 2px solid red; */
+  position: absolute;
+}
+
+.countdown {
+  height: 5vh;
+  width: 13%;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: -0px 320px;
+  background-color: rgb(16, 61, 128);
+  align-content: center;
+  position: absolute;
+  border-radius: 10px;
+}
+.countdown :is(p) {
+  line-height: 7px;
+  margin: 4px 12px;
+}
+
+footer {
+  height: 14vh;
+  width: 90%;
+  margin: -117px 80px;
+  color: white;
+  font-family: cursive;
+  background-color: black;
+  opacity: 0.6;
+  /* margin-inline: 15px; */
+  /* border: 2px solid red; */
+  position: absolute;
+}
+
+footer :where(div) {
+  height: 15vh;
+  width: 30%;
+  /* border: 2px solid red; */
+}
+
+.address {
+  width: 30%;
+  margin: 20px 100px;
+}
+
+.contact-address {
+  height: 10vh;
+  width: 20%;
+  font-weight: bold;
+  margin: -150px 650px;
+  /* border: 2px solid red; */
+  line-height: 10px;
+  position: absolute;
+}
+
+.date-time {
+  margin: -140px 1150px;
+  /* color: rgb(240, 209, 153); */
+  position: absolute;
+  line-height: 10px;
+}
+.one {
+  height: 10vh;
+  border: 3px solid rgb(240, 209, 153);
+  margin: 10px 1050px;
+  position: absolute;
+}
+.two {
+  width: 30%;
+  margin: 10px 1050px;
+
+  border: 3px solid rgb(240, 209, 153);
+  position: absolute;
+}
+/* .three {
+  width: 60%;
+  margin: 0px 54px;
+
+  border: 3px solid rgb(201, 201, 201);
+  position: absolute;
+} */
+.map-container {
+  height: 30vh;
+  width: 30%;
+  margin: -500px 70px;
+  /* border: 2px solid red; */
+  position: absolute;
+
+  z-index: 10;
+}
+.map-container :is(button) {
+  height: 6vh;
+  width: 9%;
+  margin: 150px -40px;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 18px;
+  color: black;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 100;
+}
+.map {
+  height: 8vh;
+  width: 4%;
+  margin: 10px -1000px;
+  position: absolute;
+  /* border: 2px solid red; */
+  /* display: none; */
+  z-index: 100;
+  overflow: hidden;
+}
+.connector {
+  height: 6vh;
+  width: 8%;
+  margin: 150px -8px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: rgb(240, 209, 153);
+  position: absolute;
+  /* z-index: 120; */
+}
+
+/* @media (min-width: 800px) and (max-width: 1260px) {
+  .pics-img {
+    height: 98vh;
+    width: 100%;
+  }
+} */

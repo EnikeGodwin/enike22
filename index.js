@@ -4,17 +4,17 @@ let reservation = document.querySelector('.reservation')
 let reservationDisplay = document.querySelector('.reservation-display')
 function reserveButtonEffect(){
   reservation.classList.add('reserve');
-  reservationDisplay.style.margin = '120px 24px'
-  reservationDisplay.style.transition = 'margin 1s ease-in-out' 
+  reservationDisplay.style.margin = '60px 24px'
+  reservationDisplay.style.transition = 'margin 1.5s ease-in-out' 
 
   setTimeout(() => {
-    reservationDisplay.style.margin = '120px -2880px'
+    reservationDisplay.style.margin = '60px -1800px'
     reservation.classList.remove('reserve');
   }, 20000);
   
 }
 function initialize(){
-  reservationDisplay.style.margin = '120px -2880px'
+  reservationDisplay.style.margin = '60px -1800px'
   reservation.classList.remove('reserve');
   
 }
@@ -65,7 +65,7 @@ let scrollEffect1 = document.querySelector(".scrolling-image");
         requestAnimationFrame(scrollingEffect);
       }
 function buttonEffect(){
-  let map = document.querySelector(".map");
+  let map = document.querySelector(".footer-map");
   map.style.height = "45vh"
   map.style.width = "100%"
   map.style.margin = "10px 10px"
@@ -77,9 +77,9 @@ function buttonEffect(){
   
   setTimeout(() => {
     // map.style.margin = "0px -1000px"
-    map.style.width = "2%"
-    map.style.height = "8%"
-    map.style.margin = "160px 10px"
+    map.style.width = "1%"
+    map.style.height = "1vh"
+    map.style.margin = "105px 5px"
   }, 12000);
 
 } 
@@ -87,7 +87,7 @@ function buttonEffect(){
 let timerCount = document.querySelector('.timer-text')
 let cat = document.querySelector('.cat')
 let dateElem = document.querySelector('.timer')
-let expectedDate = new Date('2025/01:59:59 ').getTime()
+let expectedDate = new Date('2025/12:59:59 ').getTime()
 // console.log(expectedDate.innerHTML)
 setInterval(() => {
   let newDate = new Date().getTime()
